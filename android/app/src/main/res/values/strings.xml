@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="facebook_app_id">1341395186334421</string>
+<string name="fb_login_protocol_scheme">fb1341395186334421</string>
+<string name="facebook_client_token">98b073194c9b1a7fe91a18f03af1bf34</string>
+<string name="app_name">com.example.instastores</string>
+
+</resources>

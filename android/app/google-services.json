@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "777419268035",
+    "project_id": "instastores-bca8d",
+    "storage_bucket": "instastores-bca8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777419268035:android:ff5e84a666c7307e046776",
+        "android_client_info": {
+          "package_name": "com.example.instastores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777419268035-vrngit5fhmc7av1oosfogseqo84n7h3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOih0LiyvJtMSp9Mxu1V50zz8b9ifiRUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777419268035-vrngit5fhmc7av1oosfogseqo84n7h3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
