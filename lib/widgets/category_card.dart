@@ -6,6 +6,7 @@ import 'package:instastores/controllers/dialog_loadingbox.dart';
 import 'package:instastores/views/category_editor.dart';
 
 import 'package:instastores/views/store_list_screen.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CategoryCard extends StatefulWidget {
   final String id;

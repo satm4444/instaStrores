@@ -1,14 +1,18 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:instastores/controllers/auth_controller.dart';
-import 'package:instastores/views/decider_screen.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
+import 'package:instastores/views/decider_screen.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:instastores/views/homescreen.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  MobileAds.instance.initialize();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
   runApp(const MyApp());
 }

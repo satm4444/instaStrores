@@ -1,4 +1,4 @@
-package com.example.instastores
+package com.kitespace.instastores
 
 import io.flutter.embedding.android.FlutterActivity
 

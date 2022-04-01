@@ -14,6 +14,43 @@
       },
       "oauth_client": [
         {
+          "client_id": "777419268035-4j0eijgm2b67r7jcl3o4618r42j8uvso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.instastores",
+            "certificate_hash": "30588b281c713562f5400e67e8188ab48668c775"
+          }
+        },
+        {
+          "client_id": "777419268035-vrngit5fhmc7av1oosfogseqo84n7h3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOih0LiyvJtMSp9Mxu1V50zz8b9ifiRUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777419268035-vrngit5fhmc7av1oosfogseqo84n7h3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777419268035:android:81392671e4bb1aa6046776",
+        "android_client_info": {
+          "package_name": "com.kitespace.instastores"
+        }
+      },
+      "oauth_client": [
+        {
           "client_id": "777419268035-vrngit5fhmc7av1oosfogseqo84n7h3d.apps.googleusercontent.com",
           "client_type": 3
         }

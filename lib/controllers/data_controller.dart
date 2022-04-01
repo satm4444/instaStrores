@@ -17,7 +17,9 @@ class DataController extends GetxController {
 
   var StoreCount;
   var CategoryId;
+
   List<CategoryModel> items = [];
+
   List<StoreModel> storeItems = [];
   List<StoreModel> filtered = [];
   List<Feedback> feedbackItems = [];

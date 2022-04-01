@@ -146,11 +146,3 @@ class _CategoryEditorState extends State<CategoryEditor> {
     );
   }
 }
-
-
-////====TASK FOR TOMMOROW===////
-////===ADD UPDATE FUNCTION FOR CATEGORY IN DATA CONTROLLER===////  ~~~~~~DONE~~~~~~
-///====SELECT IMAGE AND GET URL WHEN CLICKED ON SLECT IMAGE OPTION===//// ~~~~~DONE~~~~~
-///====SET URL WHEN IMAGE IS CHOSED USING BOOLEAN OTHERWISE PUT THE OLD SAME ONE==//// ~~~DONE~~~
-///====DELETE CATEGORY USING ID===/// ~~~~DONE~~~~
-///====DO SAME FOR LISTED STORES===///

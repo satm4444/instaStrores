@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:instastores/controllers/data_controller.dart';
 import 'package:instastores/views/add_store.dart';
 import 'package:instastores/widgets/store_widget.dart';
@@ -13,8 +14,35 @@ class StoreListScreen extends StatefulWidget {
 }
 
 class _StoreListScreenState extends State<StoreListScreen> {
+  late BannerAd _bannerAd;
   final authUser = FirebaseAuth.instance.currentUser;
   final DataController data = Get.find();
+  bool isLoading = false;
+
+  @override
+  void initState() {
+    _initbannerAd();
+    super.initState();
+  }
+
+  void _initbannerAd() {
+    _bannerAd = BannerAd(
+        size: AdSize.banner,
+        adUnitId: 'ca-app-pub-6180176865412768/3152051994',
+        listener: BannerAdListener(onAdLoaded: (_) {
+          setState(() {
+            isLoading = true;
+          });
+        }, onAdFailedToLoad: (ad, error) {
+          print('Failed to load banner Ad ${error.message}');
+          isLoading = false;
+
+          ad.dispose();
+        }),
+        request: AdRequest());
+    _bannerAd.load();
+  }
+
   @override
   Widget build(BuildContext context) {
     var gotData = Get.arguments;
@@ -25,6 +53,13 @@ class _StoreListScreenState extends State<StoreListScreen> {
         return true;
       },
       child: Scaffold(
+        bottomNavigationBar: isLoading
+            ? Container(
+                height: _bannerAd.size.height.toDouble(),
+                width: _bannerAd.size.width.toDouble(),
+                child: AdWidget(ad: _bannerAd),
+              )
+            : SizedBox(),
         backgroundColor: Colors.white,
         appBar: AppBar(
           actions: [
